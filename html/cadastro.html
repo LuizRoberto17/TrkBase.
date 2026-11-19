@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - TrkBs</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <section>
+            <div class="logo">
+                <span class="logo-laranja">Trk</span>Base<span class="logo-laranja">.</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="Index-TrkBs.html#secao2">HISTÓRIA</a>
+                <a href="Index-TrkBs.html#secao3">ÍCONES</a>
+                <a href="Index-TrkBs.html#secao4">MANOBRAS</a>
+                <a href="Index-TrkBs.html#secao5">PEÇAS</a>
+                <a href="Index-TrkBs.html" class="entrar">INÍCIO</a>
+            </div>
+        </section>
+    </header>
+
+    <main class="login">
+        <h1>Junte-se à família</h1>
+
+        <div class="abas">
+            <a href="login.html">Login</a>
+            <a href="cadastro.html" class="ativa">Cadastro</a>
+        </div>
+
+        <form>
+            <label for="campo_nome">Nome de skatista <span class="erro" id="aviso_nome"></span></label>
+            <input type="text" id="campo_nome" oninput="aviso_nome.innerHTML = ''">
+
+            <label for="campo_email">E-mail <span class="erro" id="aviso_email"></span></label>
+            <input type="text" id="campo_email" oninput="aviso_email.innerHTML = ''">
+
+            <label for="campo_senha">Senha <span class="erro" id="aviso_senha"></span></label>
+            <input type="password" id="campo_senha" oninput="conferir_senha()">
+
+            <div class="regra-senha">
+                <div id="regra_tamanho"><p style="color: #aaaaaa;">• Mínimo de 8 caracteres</p></div>
+                <div id="regra_maiuscula"><p style="color: #aaaaaa;">• Uma letra maiúscula</p></div>
+                <div id="regra_numero"><p style="color: #aaaaaa;">• Um número</p></div>
+                <div id="regra_simbolo"><p style="color: #aaaaaa;">• Um símbolo (!@#$%&*?)</p></div>
+            </div>
+
+            <button type="button" class="button" onclick="criar_conta()">Criar conta</button>
+        </form>
+    </main>
+
+    <script src="../js/cadastro.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TrkBs</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <section>
+            <div class="logo">
+                <span class="logo-laranja">Trk</span>Base<span class="logo-laranja">.</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="Index-TrkBs.html#secao2">HISTÓRIA</a>
+                <a href="Index-TrkBs.html#secao3">ÍCONES</a>
+                <a href="Index-TrkBs.html#secao4">MANOBRAS</a>
+                <a href="Index-TrkBs.html#secao5">PEÇAS</a>
+                <a href="Index-TrkBs.html" class="entrar">INÍCIO</a>
+            </div>
+        </section>
+    </header>
+
+    <main class="login">
+        <h1>Bora andar G</h1>
+
+        <div class="abas">
+            <a href="login.html" class="ativa">Login</a>
+            <a href="cadastro.html">Cadastro</a>
+        </div>
+
+        <form>
+            <label for="campo_email">E-mail <span class="erro" id="aviso_email"></span></label>
+            <input type="text" id="campo_email" oninput="aviso_email.innerHTML = ''">
+
+            <label for="campo_senha">Senha <span class="erro" id="aviso_senha"></span></label>
+            <input type="password" id="campo_senha" oninput="aviso_senha.innerHTML = ''">
+
+            <button type="button" class="button" onclick="fazer_login()">Entrar</button>
+        </form>
+    </main>
+
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>
