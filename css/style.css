@@ -188,6 +188,7 @@ body {
     animation: rolar 25s linear infinite;
 }
 
+/* animação de rolagem da faixa */
 @keyframes rolar {
     from {
         transform: translateX(0);
@@ -220,7 +221,7 @@ body {
     -webkit-text-stroke: 1.7px white;
 }
 
-/*Cards*/
+/* cards sobre skate */
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -268,7 +269,7 @@ body {
     color: white;
 }
 
-/* Painel de manobras */
+/* painel dashboard */
 .painel {
     margin-top: 40px;
     display: flex;
@@ -282,7 +283,7 @@ body {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* Lado esquerdo */
+/* lado esquerdo */
 .painel-texto h2 {
     margin: 0 0 12px;
     font-size: 40px;
@@ -309,7 +310,7 @@ body {
     color: #111111;
 }
 
-/* Lado direito */
+/* lado direito */
 .painel-dados {
     flex: 1;
     display: flex;
@@ -357,7 +358,7 @@ body {
 }
 
 
-/* Tela de login e cadastro (mesmo tamanho nas duas) */
+/* tela de login e cadastro */
 .login {
     width: 520px;
     max-width: 90%;
@@ -458,7 +459,7 @@ body {
     font-size: 12px;
 }
 
-/* Avisos de erro (cadastro) */
+/* aviso de erro (cadastro) */
 .erro {
     margin-left: 8px;
     font-size: 12px;
@@ -466,7 +467,7 @@ body {
     color: #eb352f;
 }
 
-/* Seção "Ícones do skate" */
+/* tela icones do skate */
 .hall {
     padding: 30px 40px;
 }
@@ -485,7 +486,7 @@ body {
     transform-origin: top left;
 }
 
-/* Cards */
+/* cards icones */
 .skatistas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -568,7 +569,7 @@ body {
     color: white;
 }
 
-/* Janela da história completa */
+/* janela de historia dos icones */
 .modal {
     width: 700px;
     max-width: 90%;
@@ -639,7 +640,7 @@ body {
     color: #ff5500;
 }
 
-/* Lista de conquistas */
+/* lista de conquistas */
 .conquistas {
     margin: 0;
     padding: 0;
@@ -659,4 +660,76 @@ body {
     height: 24px;
     background-image: url("../imagens/icones.svg");
     background-size: contain;
+}
+
+/* Tela de história */
+.historia {
+    padding: 80px 10% 30px;
+}
+
+.historia-etiqueta {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff5500;
+}
+
+.historia h1 {
+    margin: 0 0 24px;
+    font-size: 80px;
+    line-height: 0.95;
+}
+
+.historia-texto {
+    max-width: 650px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #aaaaaa;
+}
+
+/* Linha do tempo */
+.periodo {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 10%;
+}
+
+.inverso {
+    flex-direction: row-reverse;
+}
+
+.periodo img {
+    width: 50%;
+    height: 420px;
+    object-fit: cover;
+    border: 2px solid #3a3a3a;
+}
+
+.periodo-texto {
+    width: 50%;
+}
+
+.periodo-texto h2 {
+    margin: 0;
+    font-size: 44px;
+    color: #ff5500;
+}
+
+.periodo-texto h3 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.periodo-texto p {
+    margin: 0 0 14px;
+    line-height: 1.5;
+    color: #aaaaaa;
+}
+
+.destaque {
+    font-weight: bold;
+    color: white;
 }
