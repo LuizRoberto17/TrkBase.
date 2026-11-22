@@ -475,16 +475,12 @@ body {
     margin: 0 0 6px;
     font-size: 12px;
     font-weight: bold;
-    letter-spacing: 2px;
     color: #ff5500;
 }
 
 .hall h2 {
     margin: 0 0 30px;
     font-size: 40px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #f7f7f7;
     transform: scaleY(1.2);
     transform-origin: top left;
 }
@@ -497,19 +493,23 @@ body {
 }
 
 .skatista {
+    display: flex;
+    flex-direction: column;
     background-color: #262626;
     border: 1px solid #3a3a3a;
 }
 
 .skatista-foto {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 320px;
-    background-color: #262626;
-    background-size: 5px 5px;
-    overflow: hidden;
+}
+
+.skatista-foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .pais {
@@ -524,29 +524,139 @@ body {
 }
 
 .skatista-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 14px 16px;
-    border-top: 1px solid #3a3a3a;
 }
 
 .skatista-info h3 {
-    margin: 0 0 2px;
+    margin: 0;
     font-size: 18px;
-    font-weight: 900;
     text-transform: uppercase;
 }
 
 .skatista-info p {
     margin: 0;
     font-size: 12px;
-    letter-spacing: 1px;
     text-transform: uppercase;
     color: #aaaaaa;
 }
 
-.skatista-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    display: block;
+.skatista-info .bio {
+    margin: 12px 0 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: none;
+}
+
+.ler-mais {
+    margin-top: auto;
+    padding: 0;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ff5500;
+    cursor: pointer;
+}
+
+.ler-mais:hover {
+    color: white;
+}
+
+/* Janela da história completa */
+.modal {
+    width: 700px;
+    max-width: 90%;
+    max-height: 85vh;
+    padding: 0;
+    overflow-y: auto;
+    background-color: #262626;
+    color: white;
+    border: 2px solid black;
+    scrollbar-color: black #262626;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-topo {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 24px;
+    background-color: #1a1a1a;
+}
+
+.modal-topo h2 {
+    margin: 0;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.modal-topo p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+}
+
+.fechar {
+    width: 36px;
+    height: 36px;
+    background-color: #ff5500;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.modal-corpo {
+    padding: 24px;
+}
+
+.modal-corpo p {
+    margin: 0 0 14px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.modal-corpo .modal-bio {
+    padding-left: 16px;
+    border-left: 4px solid #ff5500;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal-corpo h3 {
+    margin: 24px 0 8px;
+    text-transform: uppercase;
+    color: #ff5500;
+}
+
+/* Lista de conquistas */
+.conquistas {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.conquistas li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+}
+
+.conquistas li::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../imagens/icones.svg");
+    background-size: contain;
 }

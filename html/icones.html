@@ -10,7 +10,7 @@
 
 <body>
 
-    <header class="header" id="header">
+    <header class="header">
         <section>
             <div class="logo">
                 <span class="logo-laranja">Trk</span>Base<span class="logo-laranja">.</span>
@@ -37,48 +37,56 @@
             <div class="skatista">
                 <div class="skatista-foto">
                     <span class="pais">EUA</span>
-                    <img src="../imagens/tony-hawk.jpg">
+                    <img src="../imagens/tony-hawk.jpg" alt="Tony Hawk">
                 </div>
                 <div class="skatista-info">
                     <h3>Tony Hawk</h3>
                     <p>Vertical</p>
+                    <p class="bio">O rosto mais famoso do skate. Inventou dezenas de manobras aéreas e levou o esporte ao mainstream.</p>
+                    <button class="ler-mais" onclick="dialogo_tony.showModal()">Ler história completa →</button>
                 </div>
             </div>
 
             <div class="skatista">
                 <div class="skatista-foto">
                     <span class="pais">EUA</span>
-                    <img src="../imagens/rodney-mullen.jpg">
+                    <img src="../imagens/rodney-mullen.jpg" alt="Rodney Mullen">
                 </div>
                 <div class="skatista-info">
                     <h3>Rodney Mullen</h3>
                     <p>Freestyle / Street</p>
+                    <p class="bio">O 'padrinho do street'. Criador do flat ground ollie, kickflip, heelflip e impossible.</p>
+                    <button class="ler-mais" onclick="dialogo_rodney.showModal()">Ler história completa →</button>
                 </div>
             </div>
 
             <div class="skatista">
                 <div class="skatista-foto">
                     <span class="pais">BRASIL</span>
-                    <img src="../imagens/rayssa-leal.jpg">
+                    <img src="../imagens/rayssa-leal.jpg" alt="Rayssa Leal">
                 </div>
                 <div class="skatista-info">
                     <h3>Rayssa Leal</h3>
                     <p>Street</p>
+                    <p class="bio">A Fadinha do Maranhão viralizou aos 7 anos e se tornou uma das maiores skatistas do mundo.</p>
+                    <button class="ler-mais" onclick="dialogo_rayssa.showModal()">Ler história completa →</button>
                 </div>
             </div>
 
             <div class="skatista">
                 <div class="skatista-foto">
                     <span class="pais">BRASIL</span>
-                    <img src="../imagens/bob-burnquist.jpg">
+                    <img src="../imagens/bob-burnquist.jpg" alt="Bob Burnquist">
                 </div>
                 <div class="skatista-info">
                     <h3>Bob Burnquist</h3>
-                    <p>Vertical / Mega rampa</p>
+                    <p>Vertical / Mega Rampa</p>
+                    <p class="bio">Pioneiro brasileiro do vert e da Mega Rampa, famoso por andar switch com estilo único.</p>
+                    <button class="ler-mais" onclick="dialogo_bob.showModal()">Ler história completa →</button>
                 </div>
             </div>
 
-                        <div class="skatista">
+            <div class="skatista">
                 <div class="skatista-foto">
                     <span class="pais">EUA</span>
                     <img src="../imagens/nyjah-huston.jpg" alt="Nyjah Huston">
@@ -86,6 +94,8 @@
                 <div class="skatista-info">
                     <h3>Nyjah Huston</h3>
                     <p>Street</p>
+                    <p class="bio">Máquina de competição do street, dominou a Street League por mais de uma década.</p>
+                    <button class="ler-mais" onclick="dialogo_nyjah.showModal()">Ler história completa →</button>
                 </div>
             </div>
 
@@ -97,6 +107,8 @@
                 <div class="skatista-info">
                     <h3>Stacy Peralta</h3>
                     <p>Dogtown</p>
+                    <p class="bio">Membro dos Z-Boys, cofundador da Bones Brigade e diretor de documentários icônicos.</p>
+                    <button class="ler-mais" onclick="dialogo_stacy.showModal()">Ler história completa →</button>
                 </div>
             </div>
 
@@ -108,6 +120,8 @@
                 <div class="skatista-info">
                     <h3>Letícia Bufoni</h3>
                     <p>Street</p>
+                    <p class="bio">Abriu caminho para as mulheres no street mundial, com atitude e muitos pódios.</p>
+                    <button class="ler-mais" onclick="dialogo_leticia.showModal()">Ler história completa →</button>
                 </div>
             </div>
 
@@ -119,11 +133,213 @@
                 <div class="skatista-info">
                     <h3>Pedro Barros</h3>
                     <p>Park / Bowl</p>
+                    <p class="bio">Rei do bowl de Florianópolis, conhecido pela velocidade e aéreos gigantes.</p>
+                    <button class="ler-mais" onclick="dialogo_pedro.showModal()">Ler história completa →</button>
                 </div>
             </div>
 
         </div>
     </section>
+
+    <dialog class="modal" id="dialogo_tony">
+        <div class="modal-topo">
+            <div>
+                <h2>Tony Hawk</h2>
+                <p>EUA · Vertical</p>
+            </div>
+            <button class="fechar" onclick="dialogo_tony.close()">✕</button>
+        </div>
+
+        <div class="modal-corpo">
+            <p class="modal-bio">O rosto mais famoso do skate. Inventou dezenas de manobras aéreas e levou o esporte ao mainstream.</p>
+
+            <p>Nascido em San Diego em 1968, Hawk era um garoto magricela e hiperativo que encontrou no skate uma válvula de escape. Aos 14 já era profissional e, aos 16, era considerado o melhor skatista de vert do mundo — título que defenderia por mais de uma década.</p>
+            <p>Sua obsessão por progressão técnica rendeu dezenas de manobras inventadas, como o Madonna e o Stalefish 540. Em 1999, após onze tentativas frustradas, ele acertou o primeiro 900° da história nos X Games — duas voltas e meia no ar —, o momento mais icônico do esporte.</p>
+            <p>Fora das rampas, a série de games Tony Hawk's Pro Skater apresentou o skate a milhões de pessoas, e sua fundação já financiou centenas de pistas públicas em comunidades carentes dos EUA.</p>
+
+            <h3>Conquistas</h3>
+            <ul class="conquistas">
+                <li>Primeiro 900° (1999)</li>
+                <li>16 medalhas nos X Games</li>
+                <li>Série de games Pro Skater</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="modal" id="dialogo_rodney">
+        <div class="modal-topo">
+            <div>
+                <h2>Rodney Mullen</h2>
+                <p>EUA · Freestyle / Street</p>
+            </div>
+            <button class="fechar" onclick="dialogo_rodney.close()">✕</button>
+        </div>
+
+        <div class="modal-corpo">
+            <p class="modal-bio">O 'padrinho do street'. Criador do flat ground ollie, kickflip, heelflip e impossible.</p>
+
+            <p>Mullen começou no freestyle dos anos 70, modalidade de manobras técnicas no chão plano, e dominou o circuito vencendo 35 de 36 competições que disputou. Mas sua maior contribuição viria depois.</p>
+            <p>No início dos anos 80, ele adaptou o ollie de transição para o chão plano — o flat ground ollie — e, a partir dele, inventou o kickflip, o heelflip, o 360 flip e o impossible. Praticamente toda manobra de street que existe hoje nasceu da mente dele.</p>
+            <p>Tímido e perfeccionista, Mullen treinava sozinho de madrugada em galpões. Seu TED Talk sobre criatividade e quedas é uma das palestras mais assistidas sobre skate já feitas.</p>
+
+            <h3>Conquistas</h3>
+            <ul class="conquistas">
+                <li>Inventou o kickflip moderno</li>
+                <li>35 títulos de freestyle</li>
+                <li>Base técnica do street atual</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="modal" id="dialogo_rayssa">
+        <div class="modal-topo">
+            <div>
+                <h2>Rayssa Leal</h2>
+                <p>BRASIL · Street</p>
+            </div>
+            <button class="fechar" onclick="dialogo_rayssa.close()">✕</button>
+        </div>
+
+        <div class="modal-corpo">
+            <p class="modal-bio">A Fadinha do Maranhão viralizou aos 7 anos e se tornou uma das maiores skatistas do mundo.</p>
+
+            <p>Jhulia Rayssa Mendes Leal nasceu em Imperatriz, Maranhão, e ganhou o primeiro skate aos 6 anos. Aos 7, um vídeo seu mandando um heelflip de vestido de fada azul viralizou — e ganhou o apelido que a acompanha até hoje: Fadinha.</p>
+            <p>Aos 13 anos, ela conquistou a medalha de prata na estreia do street feminino nos Jogos de Tóquio 2020, tornando-se a atleta olímpica brasileira mais jovem a subir ao pódio. Em Paris 2024, levou o bronze.</p>
+            <p>Entre uma Olimpíada e outra, colecionou títulos da Street League e virou referência para uma geração inteira de meninas que viram nela a prova de que o skate também é lugar de mulher.</p>
+
+            <h3>Conquistas</h3>
+            <ul class="conquistas">
+                <li>Prata em Tóquio 2020</li>
+                <li>Bronze em Paris 2024</li>
+                <li>Campeã da SLS</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="modal" id="dialogo_bob">
+        <div class="modal-topo">
+            <div>
+                <h2>Bob Burnquist</h2>
+                <p>BRASIL · Vertical / Mega Rampa</p>
+            </div>
+            <button class="fechar" onclick="dialogo_bob.close()">✕</button>
+        </div>
+
+        <div class="modal-corpo">
+            <p class="modal-bio">Pioneiro brasileiro do vert e da Mega Rampa, famoso por andar switch com estilo único.</p>
+
+            <p>Nascido no Rio de Janeiro, Bob começou a andar de skate aos 11 anos em São Paulo e logo se destacou pela habilidade rara de andar igualmente bem nas duas bases — regular e switch.</p>
+            <p>Mudou-se para os EUA e se tornou o maior medalhista brasileiro dos X Games, com 30 medalhas. Foi o primeiro a completar um loop inteiro andando switch e o primeiro a acertar um 900° fakie to fakie na Mega Rampa.</p>
+            <p>Em sua casa na Califórnia, ele construiu a 'Dreamland', uma das mega rampas particulares mais famosas do mundo, onde continua testando os limites do que é possível fazer em cima de um skate.</p>
+
+            <h3>Conquistas</h3>
+            <ul class="conquistas">
+                <li>30 medalhas nos X Games</li>
+                <li>Lenda da Mega Rampa</li>
+                <li>Primeiro loop switch</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="modal" id="dialogo_nyjah">
+        <div class="modal-topo">
+            <div>
+                <h2>Nyjah Huston</h2>
+                <p>EUA · Street</p>
+            </div>
+            <button class="fechar" onclick="dialogo_nyjah.close()">✕</button>
+        </div>
+
+        <div class="modal-corpo">
+            <p class="modal-bio">Máquina de competição do street, dominou a Street League por mais de uma década.</p>
+
+            <p>Criado em uma família rastafári na Califórnia, Nyjah andava de skate antes dos 5 anos e já era profissional aos 11 — um dos mais jovens da história. Sua infância incluiu anos em uma fazenda isolada em Porto Rico, longe do circuito.</p>
+            <p>De volta aos EUA, ele se tornou o competidor mais dominante do street: recordista de vitórias na Street League Skateboarding e dono de 13 medalhas de ouro nos X Games, mais do que qualquer outro skatista de street.</p>
+            <p>Conhecido pela consistência assustadora em corrimãos e escadas gigantes, Nyjah representou os EUA na estreia olímpica do skate em Tóquio e segue como referência técnica da modalidade.</p>
+
+            <h3>Conquistas</h3>
+            <ul class="conquistas">
+                <li>Múltiplo campeão mundial</li>
+                <li>13 ouros nos X Games</li>
+                <li>Recordista da SLS</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="modal" id="dialogo_stacy">
+        <div class="modal-topo">
+            <div>
+                <h2>Stacy Peralta</h2>
+                <p>EUA · Dogtown</p>
+            </div>
+            <button class="fechar" onclick="dialogo_stacy.close()">✕</button>
+        </div>
+
+        <div class="modal-corpo">
+            <p class="modal-bio">Membro dos Z-Boys, cofundador da Bones Brigade e diretor de documentários icônicos.</p>
+
+            <p>Peralta foi um dos Z-Boys originais, a equipe de Venice Beach que revolucionou o skate nos anos 70 levando o estilo do surf para as piscinas vazias de Dogtown. Aos 19, já era um dos skatistas mais bem ranqueados do mundo.</p>
+            <p>Aos 23, trocou a carreira de atleta pela de empresário: cofundou a Powell-Peralta e montou a Bones Brigade, equipe que revelou Tony Hawk, Rodney Mullen e Steve Caballero, e cujos vídeos definiram o skate dos anos 80.</p>
+            <p>Como cineasta, dirigiu 'Dogtown and Z-Boys' (2001) e 'Riding Giants' (2004), documentários premiados que registraram para sempre a história do skate e do surf de ondas grandes.</p>
+
+            <h3>Conquistas</h3>
+            <ul class="conquistas">
+                <li>Z-Boys original</li>
+                <li>Fundou a Bones Brigade</li>
+                <li>Dirigiu 'Dogtown and Z-Boys'</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="modal" id="dialogo_leticia">
+        <div class="modal-topo">
+            <div>
+                <h2>Letícia Bufoni</h2>
+                <p>BRASIL · Street</p>
+            </div>
+            <button class="fechar" onclick="dialogo_leticia.close()">✕</button>
+        </div>
+
+        <div class="modal-corpo">
+            <p class="modal-bio">Abriu caminho para as mulheres no street mundial, com atitude e muitos pódios.</p>
+
+            <p>Nascida em São Paulo, Letícia começou a andar de skate aos 9 anos com os meninos do bairro — contra a vontade do pai, que chegou a quebrar seu shape. Aos 14, mudou-se sozinha para os EUA para perseguir o sonho de viver do skate.</p>
+            <p>A aposta deu certo: ela se tornou uma das skatistas mais vitoriosas da história, com 6 ouros nos X Games e o recorde Guinness de maior número de medalhas femininas na competição.</p>
+            <p>Antes de Rayssa Leal, foi Bufoni quem abriu as portas do skate profissional para as brasileiras, provando que uma mulher podia viver de street no mais alto nível — e inspirando a geração que viria depois.</p>
+
+            <h3>Conquistas</h3>
+            <ul class="conquistas">
+                <li>6 ouros nos X Games</li>
+                <li>Recorde Guinness de medalhas</li>
+                <li>Ícone do skate feminino</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="modal" id="dialogo_pedro">
+        <div class="modal-topo">
+            <div>
+                <h2>Pedro Barros</h2>
+                <p>BRASIL · Park / Bowl</p>
+            </div>
+            <button class="fechar" onclick="dialogo_pedro.close()">✕</button>
+        </div>
+
+        <div class="modal-corpo">
+            <p class="modal-bio">Rei do bowl de Florianópolis, conhecido pela velocidade e aéreos gigantes.</p>
+
+            <p>Pedro cresceu em Florianópolis andando no bowl que o pai construiu no quintal de casa — o famoso 'RTMF'. Sem pistas por perto, o quintal virou seu campo de treino e, mais tarde, ponto de encontro dos melhores skatistas do planeta.</p>
+            <p>Sua marca registrada é a velocidade: poucos no mundo andam tão rápido e tão alto num bowl. Essa potência rendeu a ele múltiplos títulos dos X Games e da Vans Park Series.</p>
+            <p>Na estreia do park nos Jogos de Tóquio 2020, Pedro conquistou a medalha de prata, consolidando o Brasil como potência mundial também nas transições — e segue competindo no mais alto nível.</p>
+
+            <h3>Conquistas</h3>
+            <ul class="conquistas">
+                <li>Prata em Tóquio 2020</li>
+                <li>Múltiplo campeão dos X Games</li>
+                <li>Lenda do park</li>
+            </ul>
+        </div>
+    </dialog>
 
     <footer class="rodape">
         <div class="logo"><span class="logo-laranja">Trk</span>Base<span class="logo-laranja">.</span></div>
