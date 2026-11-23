@@ -60,6 +60,10 @@ body {
     letter-spacing: 1px;
 }
 
+.nav-links b {
+    color: #ff5500;
+}
+
 .nav-links a:hover {
     color: #ff5500;
 }
