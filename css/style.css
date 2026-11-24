@@ -737,3 +737,89 @@ body {
     font-weight: bold;
     color: white;
 }
+
+/* Tela de manobras */
+.manobras {
+    padding: 30px 40px;
+}
+
+.manobras h1 {
+    margin: 0 0 20px;
+    font-size: 72px;
+    line-height: 1;
+}
+
+.manobras h2 {
+    margin: 40px 0 16px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #ff5500;
+}
+
+/* Botões de nível */
+.niveis {
+    display: inline-flex;
+    gap: 4px;
+    padding: 6px;
+    background-color: #262626;
+    border: 2px solid #3a3a3a;
+}
+
+.niveis a {
+    padding: 10px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #aaaaaa;
+}
+
+.niveis a:hover {
+    background-color: #ff5500;
+    color: #111111;
+}
+
+/* Lista de manobras */
+.lista-manobras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.manobra {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #262626;
+    border: 2px solid #3a3a3a;
+    text-decoration: none;
+    color: white;
+}
+
+.manobra:hover {
+    border-color: #ff5500;
+}
+
+.manobra-num {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff5500;
+}
+
+.manobra h3 {
+    margin: 8px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.manobra p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+    color: #aaaaaa;
+}
+
+.manobra-ver {
+    margin-top: auto;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ff5500;
+}
+
