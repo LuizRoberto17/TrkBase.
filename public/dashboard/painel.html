@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Evolução - SbTrickBase</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <section>
+            <div class="logo">
+                <span class="logo-laranja">Trk</span>Base<span class="logo-laranja">.</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="../html/Index-TrkBs.html">INICIO</a>
+                <a href="../html/historia.html">HISTÓRIA</a>
+                <a href="../html/icones.html">ÍCONES</a>
+                <a href="../html/manobras.html">MANOBRAS</a>
+                <a href="../html/pecas.html">PEÇAS</a>
+                <a href="../html/login.html" class="entrar">ENTRAR</a>
+            </div>
+        </section>
+    </header>
+
+    <section class="evolucao">
+        <p class="evolucao-etiqueta">PAINEL DE EVOLUÇÃO</p>
+        <h1>E aí, Usuario!</h1>
+
+        <div class="numeros">
+            <div class="numero">
+                <h2 id="num_acertadas">0</h2>
+                <p>Manobras acertadas</p>
+            </div>
+
+            <div class="numero">
+                <h2 id="num_treinando">0</h2>
+                <p>Treinando</p>
+            </div>
+
+            <div class="numero">
+                <h2 id="num_metas">0/0</h2>
+                <p>Metas concluídas</p>
+            </div>
+        </div>
+
+        <div class="progresso">
+            <p>Progresso geral</p>
+            <p id="texto_progresso">0%</p>
+        </div>
+        <div class="barra" id="barra"></div>
+
+        <div class="blocos">
+
+            <div class="bloco">
+                <h2><img src="../imagens/chama-manobras.png" alt="">Manobras</h2>
+
+                <div class="campo">
+                    <input type="text" id="ipt_manobra" list="opcoes_manobras" placeholder="Ex: Kickflip">
+                    <button class="button" onclick="adicionar_manobra()">ADICIONAR</button>
+                </div>
+                <p class="erro" id="aviso_manobra"></p>
+
+                <datalist id="opcoes_manobras">
+                    <option value="Remada e Equilíbrio">
+                    <option value="Ollie">
+                    <option value="Manual">
+                    <option value="Drop-in">
+                    <option value="Shove-it">
+                    <option value="Kickflip">
+                    <option value="Heelflip">
+                    <option value="50-50">
+                    <option value="Boardslide">
+                    <option value="Tre Flip">
+                    <option value="Hardflip">
+                    <option value="Impossible">
+                </datalist>
+
+                <div id="lista_manobras">
+                    <p class="vazio">Nenhuma manobra ainda. Comece pelo ollie!</p>
+                </div>
+            </div>
+
+            <div class="bloco">
+                <h2><img src="../imagens/alvo-metas.png" alt="">Metas</h2>
+
+                <div class="campo">
+                    <input type="text" id="ipt_meta" placeholder="Ex: Dropar na mini ramp">
+                    <button class="button" onclick="adicionar_meta()">ADICIONAR</button>
+                </div>
+                <p class="erro" id="aviso_meta"></p>
+
+                <div id="lista_metas">
+                    <p class="vazio">Defina sua primeira meta.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="logo"><span class="logo-laranja">Trk</span>Base<span class="logo-laranja">.</span></div>
+        <p>Feito por skatista, para skatistas. Skate or die. ☠️</p>
+    </footer>
+
+    <script src="../js/painel.js"></script>
+
+</body>
+
+</html>
