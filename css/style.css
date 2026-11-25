@@ -823,3 +823,167 @@ body {
     color: #ff5500;
 }
 
+/* Painel de evolução */
+.evolucao {
+    padding: 40px 40px 60px;
+}
+
+.evolucao-etiqueta {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff5500;
+}
+
+.evolucao h1 {
+    margin: 0 0 30px;
+    font-size: 48px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+/* Quadros com os números */
+.numeros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.numero {
+    padding: 24px;
+    background-color: #262626;
+    border: 2px solid white;
+    box-shadow: 6px 6px 0 #ff5500;
+}
+
+.numero h2 {
+    margin: 0;
+    font-size: 48px;
+    color: #ff5500;
+}
+
+.numero p {
+    margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+}
+
+/* Barra de progresso */
+.progresso {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.progresso p {
+    margin: 0;
+}
+
+.progresso p + p {
+    color: #ffd400;
+}
+
+.barra {
+    height: 12px;
+    background-color: #3a2218;
+}
+
+.barra-cheia {
+    height: 100%;
+    background-color: #ff5500;
+}
+
+/* Manobras e metas */
+.blocos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.bloco {
+    padding: 30px;
+    background-color: #262626;
+    border: 2px solid #3a3a3a;
+}
+
+.bloco h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.bloco h2 img {
+    width: 28px;
+    height: 28px;
+}
+
+.campo {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.campo input {
+    flex: 1;
+    height: 44px;
+    padding: 0 16px;
+    background-color: #262626;
+    color: white;
+    border: 2px solid #3a3a3a;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #ff5500;
+}
+
+.campo .button {
+    padding: 0 20px;
+    border: 2px solid white;
+    color: #111111;
+}
+
+.bloco .erro {
+    margin: 6px 0 0;
+}
+
+.vazio {
+    margin: 20px 0 0;
+    color: #aaaaaa;
+}
+
+/* Itens adicionados */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.item button {
+    padding: 4px 12px;
+    background: none;
+    border: 2px solid #ff5500;
+    font-weight: bold;
+    color: #ff5500;
+    cursor: pointer;
+}
+
+.item button:hover {
+    background-color: #ff5500;
+    color: #111111;
+}
+
+.feito {
+    color: #aaaaaa;
+    text-decoration: line-through;
+}
